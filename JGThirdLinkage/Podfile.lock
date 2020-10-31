@@ -1,0 +1,28 @@
+PODS:
+  - Masonry (1.1.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Masonry
+  - Reusable
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - Reusable
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: eb275c1c241b8ddd3f6c28c8fbb1fefd0b018f85
+
+COCOAPODS: 1.5.2

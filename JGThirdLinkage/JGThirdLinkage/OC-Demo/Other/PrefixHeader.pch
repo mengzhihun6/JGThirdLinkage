@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  JGThirdLinkage
+//
+//  Created by spring on 2020/10/31.
+//  Copyright © 2020 spring. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "JGConst.h"
+#import "UIColor+JGHexColor.h"
+#import "UILabel+JGAutoFrame.h"
+#import "UIView+JGExtension.h"
+
+
+#define SJHeight ([[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 86 : 64)  //导航栏高度
+
+
+/** 弱引用 */
+#define WEAKSELF __weak typeof(self) weakSelf = self
+
+/*******************************  尺寸  ***********************************/
+#define kDeviceHight [UIScreen mainScreen].bounds.size.height
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+
+//宽高等比缩放 这里的375我是针对6为标准适配的,如果需要其他标准可以修改
+#define kWidthScale(R) ((R)*(kDeviceWidth/375.0f))
+#define kHeightScale(R) kWidthScale(R)
+
+
+/*************************  颜色  *********************************/
+//颜色
+#define JGHexColor(hexCode) [UIColor colorWithHexCode:hexCode]
+
+//字体
+#define JGFontSystem(x) [UIFont systemFontOfSize:x] //字体尺寸
+#define JGBoldFont(x) [UIFont fontWithName:@"Helvetica-Bold" size:x] //加粗字体尺寸
+
+
+#define JGFont(x) [UIFont fontWithName:@"PingFangSC-Regular" size:x]
+#define JGFontMedium_size(x) [UIFont fontWithName:@"PingFangSC-Medium" size:x]
+#define JGFontBold_size(x) [UIFont fontWithName:@"PingFangSC-Semibold" size:x]
+#define JGFontPFLight_size(x) [UIFont fontWithName:@"PingFangSC-Light" size:x]
+#define JGFontSemibold_size(x) [UIFont fontWithName:@"PingFang-SC-Semibold" size:x]
+
+#define JGImage(name) [UIImage imageNamed:name] //图片
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

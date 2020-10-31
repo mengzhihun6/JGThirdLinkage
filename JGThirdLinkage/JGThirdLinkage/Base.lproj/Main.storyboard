@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOA-st-mQ3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--三级联动-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JGMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgd-QU-NN0">
+                                <rect key="frame" x="132" y="438" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iQq-9c-4Ys"/>
+                                    <constraint firstAttribute="width" constant="150" id="lBN-WS-Rwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Swift版本">
+                                    <color key="titleColor" red="0.98418349029999996" green="0.98817938569999997" blue="0.99214237930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bZz-3c-DoG" kind="push" id="BcV-SL-pEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zc-R1-qzD">
+                                <rect key="frame" x="132" y="238" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0RN-jC-rkf"/>
+                                    <constraint firstAttribute="height" constant="50" id="L5y-oz-SmE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="OC版本">
+                                    <color key="titleColor" red="0.98418349029999996" green="0.98817938569999997" blue="0.99214237930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="18t-bs-BzB" kind="push" id="DAJ-XI-Jfe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8zc-R1-qzD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CyQ-Wf-24u"/>
+                            <constraint firstItem="8zc-R1-qzD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="LWz-hY-GWX"/>
+                            <constraint firstItem="Sgd-QU-NN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFL-Ef-5US"/>
+                            <constraint firstItem="Sgd-QU-NN0" firstAttribute="top" secondItem="8zc-R1-qzD" secondAttribute="bottom" constant="150" id="tax-dQ-zBq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="三级联动" id="oUI-nI-DBf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="131"/>
+        </scene>
+        <!--Swift版本-->
+        <scene sceneID="kj8-fK-d7Y">
+            <objects>
+                <viewController id="bZz-3c-DoG" customClass="JGThirdLinkageSwift" customModule="JGThirdLinkage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqc-ZM-LTg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5Dz-fV-7NJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift版本" id="bbh-IN-DKr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Glt-GE-qly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="514"/>
+        </scene>
+        <!--OC版本-->
+        <scene sceneID="s19-zl-ne8">
+            <objects>
+                <viewController id="18t-bs-BzB" customClass="JGThirdLinkageOC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M04-tE-xz5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pF1-pW-FEA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OC版本" id="sd2-Sa-tH3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llU-VR-WFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="-185"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6TG-E0-jKb">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavId" automaticallyAdjustsScrollViewInsets="NO" id="wOA-st-mQ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1BS-tC-wuU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HWT-Bm-HLP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKu-Zm-zQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726" y="131"/>
+        </scene>
+    </scenes>
+</document>
