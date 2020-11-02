@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0089DE16713DA0880183AA8D /* Pods_JGThirdLinkageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440E1EDD7F5B43EF9BB92E97 /* Pods_JGThirdLinkageTests.framework */; };
 		18811381FC6AC31F7398577E /* Pods_JGThirdLinkage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D7C98A295BC6D0E0F41EAF /* Pods_JGThirdLinkage.framework */; };
-		6F892218254D564D001C5583 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F892217254D564D001C5583 /* AppDelegate.m */; };
+		6F892218254D564D001C5583 /* JGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F892217254D564D001C5583 /* JGAppDelegate.m */; };
 		6F89221E254D564D001C5583 /* JGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F89221D254D564D001C5583 /* JGMainViewController.m */; };
 		6F892221254D564D001C5583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F89221F254D564D001C5583 /* Main.storyboard */; };
 		6F892223254D5653001C5583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F892222254D5653001C5583 /* Assets.xcassets */; };
@@ -82,8 +82,8 @@
 		2F69F9C87065224DD93D31F6 /* Pods-JGThirdLinkage-JGThirdLinkageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JGThirdLinkage-JGThirdLinkageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JGThirdLinkage-JGThirdLinkageUITests/Pods-JGThirdLinkage-JGThirdLinkageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		440E1EDD7F5B43EF9BB92E97 /* Pods_JGThirdLinkageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JGThirdLinkageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F892213254D564D001C5583 /* JGThirdLinkage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGThirdLinkage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F892216254D564D001C5583 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6F892217254D564D001C5583 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F892216254D564D001C5583 /* JGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGAppDelegate.h; sourceTree = "<group>"; };
+		6F892217254D564D001C5583 /* JGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGAppDelegate.m; sourceTree = "<group>"; };
 		6F89221C254D564D001C5583 /* JGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGMainViewController.h; sourceTree = "<group>"; };
 		6F89221D254D564D001C5583 /* JGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGMainViewController.m; sourceTree = "<group>"; };
 		6F892220254D564D001C5583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -307,8 +307,8 @@
 		6F892254254D5789001C5583 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				6F892216254D564D001C5583 /* AppDelegate.h */,
-				6F892217254D564D001C5583 /* AppDelegate.m */,
+				6F892216254D564D001C5583 /* JGAppDelegate.h */,
+				6F892217254D564D001C5583 /* JGAppDelegate.m */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -738,7 +738,7 @@
 				6F8922C8254D6660001C5583 /* ZYBaseCollectionViewCell.m in Sources */,
 				6F89221E254D564D001C5583 /* JGMainViewController.m in Sources */,
 				6F8922F8254D6767001C5583 /* JGBaseTableViewCell.swift in Sources */,
-				6F892218254D564D001C5583 /* AppDelegate.m in Sources */,
+				6F892218254D564D001C5583 /* JGAppDelegate.m in Sources */,
 				6F89231D254D68D7001C5583 /* UIViewExtension.swift in Sources */,
 				6F89229A254D5E65001C5583 /* UIView+JGExtension.m in Sources */,
 				6F8922F6254D6767001C5583 /* JGBaseCollectionReusableView.swift in Sources */,

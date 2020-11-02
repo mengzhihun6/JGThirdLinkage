@@ -1,19 +1,18 @@
 //
-//  AppDelegate.m
+//  JGAppDelegate.m
 //  JGThirdLinkage
 //
 //  Created by spring on 2020/10/31.
 //  Copyright © 2020 spring. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "JGMainViewController.h"
+#import "JGAppDelegate.h"
 
-@interface AppDelegate ()
+@interface JGAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation JGAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
